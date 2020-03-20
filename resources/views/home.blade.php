@@ -7,11 +7,8 @@
 </head>
 
 <body>
-<div class="container">
-    <nav class="navbar navbar-default">
-        <!-- Navbar Contents -->
-    </nav>
-</div>
+
+Energia.eco
 
 <script src="{{ elixir('js/app.js') }}"></script>
 </body>
