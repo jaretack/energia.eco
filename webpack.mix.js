@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,3 +14,11 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/main.scss', 'public/css');
+
+mix.webpackConfig({
+    plugins: [
+        new LiveReloadPlugin()
+    ]
+});
+
+
