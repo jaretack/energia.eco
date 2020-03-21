@@ -21,4 +21,6 @@ mix.webpackConfig({
     ]
 });
 
+mix.disableSuccessNotifications();
+
 
