@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home page')
+@section('title', 'Fotowoltaika')
 
 @section('content')
     <h1>Hello, {{ $active_page }}</h1>
@@ -8,8 +8,6 @@
 
     <a href="{{ url('') }}">home</a>
     <a href="{{ url('fotowoltaika') }}">fotowoltaika</a>
-
-    <img src="/images/partners/kpt.png">
 
     @if ($active_page === 'home')
         Aktywny home
