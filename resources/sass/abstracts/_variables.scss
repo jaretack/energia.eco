@@ -3,28 +3,18 @@
 // -----------------------------------------------------------------------------
 
 
-
-
-
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
+$text-font-stack: 'Montserrat', Arial, sans-serif !default;
 
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: #111 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-color: #cc2020 !default;
 
 /// Light grey
 /// @type Color
@@ -38,16 +28,22 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
+/// Ligh yellow
+/// @type Color
+$light-yellow: #feb645 !default;
 
+/// Ligh green
+/// @type Color
+$light-green: #8fc400 !default;
 
+/// Light blue
+/// @type Color
+$light-blue: #207ce5 !default;
 
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
-
-
-
+$max-width: 1380px !default;
 
 
 /// Breakpoints map
@@ -58,10 +54,6 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
 ) !default;
-
-
-
-
 
 
 /// Relative or absolute URL where all assets are served from

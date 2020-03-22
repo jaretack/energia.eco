@@ -2,6 +2,81 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+    color: $text-color;
+    font-family: $text-font-stack;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.text-size-1 {
+    font-size: 40px;
+    line-height: initial;
+    font-weight: 900;
+}
+
+.text-size-2 {
+    font-size: 32px;
+    line-height: initial;
+    font-weight: 900;
+}
+
+.text-size-3 {
+    font-size: 24px;
+    line-height: initial;
+    font-weight: 700;
+}
+
+.text-size-4 {
+    font-size: 20px;
+    line-height: initial;
+    font-weight: 700;
+}
+
+.text-size-5 {
+    font-size: 16px;
+    line-height: initial;
+    font-weight: 700;
+}
+
+.text-size-6 {
+    font-size: 14px;
+    line-height: initial;
+    font-weight: 700;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-upercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
