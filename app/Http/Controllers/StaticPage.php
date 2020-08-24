@@ -15,4 +15,14 @@ class StaticPage extends Controller
     {
         return view('fotowoltaika', ['active_page' => 'fotowoltaika']);
     }
+
+    public function fotowoltaikaKielce()
+    {
+        return view('fotowoltaika-kielce', ['active_page' => 'fotowoltaika-kielce']);
+    }
+
+    public function folieGrzewcze()
+    {
+        return view('folie-grzewcze', ['active_page' => 'folie-grzewcze']);
+    }
 }

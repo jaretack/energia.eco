@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the radio button component.
+// -----------------------------------------------------------------------------
+.radio-button {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    margin-left: 30px;
+    line-height: 25px;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: darken($brand-color, 10);
+        border-radius: 50%;
+    }
+
+    input:checked ~ .radio-button__checkmark {
+        background-color: #fff;
+    }
+
+    &__checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    input:checked ~ .radio-button__checkmark:after {
+        display: block;
+    }
+
+    &__checkmark:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $brand-color;
+    }
+}

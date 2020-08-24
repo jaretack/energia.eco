@@ -8,7 +8,8 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 
 // 3. Base stuff
 @import
@@ -19,12 +20,28 @@
 
 // 4. Layout-related sections
 @import
+  'layout/top-bar',
+  'layout/main-navigation',
   'layout/header',
+  'layout/recommendations',
+  'layout/process',
+  'layout/cookies',
+  'layout/eco-energy',
+  'layout/eco-energy-benefits',
+  'layout/our-services',
+  'layout/contact',
   'layout/footer';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/partners',
+  'components/input',
+  'components/checkbox',
+  'components/icon',
+  'components/ratings',
+  'components/waves-animation',
+  'components/breadcrumbs';
 
 // 6. Page-specific styles
 @import

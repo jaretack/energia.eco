@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the ratings component.
+// -----------------------------------------------------------------------------
+.ratings {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    &__star {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: image('icons/star.svg');
+        background-repeat: no-repeat;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

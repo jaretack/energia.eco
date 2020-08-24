@@ -1,0 +1,220 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the services box of the site/application.
+// -----------------------------------------------------------------------------
+.services-box-container {
+    position: relative;
+    margin-top: 120px;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: calc(50% + 15px);
+        display: block;
+        background-color: #fdfdfd;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.services-box {
+    display: flex;
+    width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+
+    &__item {
+        border: 1px solid $light-grey;
+        border-radius: 3px;
+        background-color: #fff;
+        padding-bottom: 60px;
+
+        &:nth-child(1) {
+            flex: 0 0 calc((100% / 3));
+            z-index: 0;
+            // background-color: #fbf9f4;
+            border-color: $light-yellow;
+
+            .services-box__packet {
+                background-color: $light-yellow;
+            }
+        }
+
+        &:nth-child(2) {
+            flex: 0 0 calc((100% / 3) + 60px);
+            position: relative;
+            z-index: 1;
+            left: -30px;
+            margin-top: -30px;
+            margin-bottom: -30px;
+            border-color: $light-green;
+            border: 3px solid $light-green;
+
+            .services-box__item-container {
+                width: 100%;
+            }
+
+            .services-box__packet {
+                background-color: $light-green;
+            }
+
+            .services-box__item-title-container {
+                margin-top: 30px;
+            }
+
+            .services-box__more {
+                bottom: 30px;
+                border-color: $light-green;
+            }
+        }
+
+        &:nth-child(3) {
+            flex: 0 0 calc((100% / 3));
+            position: relative;
+            z-index: 0;
+            left: -60px;
+            border-color: $brand-color;
+            // background-color: #f9f1ee;
+            // background-color: #faf6f3;
+
+            .services-box__packet {
+                background-color: $brand-color;
+            }
+
+            .services-box__item-container {
+                margin-left: 30px;
+            }
+
+            .services-box__more {
+                border-color: $brand-color;
+            }
+        }
+    }
+
+    &__item-title-container {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+
+    &__item-title {
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #bbb;
+    }
+
+    &__packet {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__item-container {
+        text-align: center;
+        width: calc(100% - 30px);
+        position: relative;
+        height: 100%;
+    }
+
+    &__item-name {
+        display: block;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    &__item-type {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__item-power {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__item-performance {
+        display: block;
+    }
+
+    &__item-certificate {
+        display: block;
+    }
+
+    &__item-warrantly {
+        display: inline-block;
+        border: 1px solid $brand-color;
+        font-weight: 600;
+        padding: 3px 5px;
+        color: $brand-color;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__item-warrantly-title {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__item-installation {
+        display: block;
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item-installation-icon {
+        color: $brand-color;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    &__item-inverter {
+        display: block;
+        max-width: 150px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item-inverter-icon {
+        color: $brand-color;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    &__item-optimizer {
+        display: block;
+    }
+
+    &__item-optimizer-icon {
+        color: $brand-color;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    &__item-optimizer-title {
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

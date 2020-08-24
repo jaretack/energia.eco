@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the eco energy of the site/application.
+// -----------------------------------------------------------------------------
+.eco-energy {
+    padding-top: 180px;
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        @include fonts("size-3");
+    }
+
+    &__intro {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 120px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+        width: calc((100% - 60px) / 3);
+        border: 1px solid $light-grey;
+        border-radius: 3px;
+    }
+
+    &__box-title {
+        order: 2;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 320px;
+        @include fonts("size-4");
+    }
+
+    &__box-text {
+        order: 3;
+    }
+
+    .icon {
+        order: 1;
+        margin-right: auto;
+    }
+}
+
+// RWD
+@include respond-until("extra-large") {
+    .eco-energy {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &__container {
+            max-width: 100%;
+        }
+
+        &__box {
+            padding: 30px;
+        }
+    }
+}
+
+@include respond-until("large") {
+    .eco-energy {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__box {
+            width: 100%;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

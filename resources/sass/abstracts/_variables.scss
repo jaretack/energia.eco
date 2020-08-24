@@ -10,36 +10,27 @@ $text-font-stack: 'Montserrat', Arial, sans-serif !default;
 
 /// Copy text color
 /// @type Color
-$text-color: #111 !default;
+$text-color: #000 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #cc2020 !default;
+$brand-color: hsl(0, 73%, 46%) !default;
 
 /// Light grey
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$light-grey: hsl(0, 0%, 96%) !default;
 
-/// Medium grey
+/// Light yellow
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-/// Ligh yellow
-/// @type Color
-$light-yellow: #feb645 !default;
+$light-yellow: hsl(37, 99%, 63%) !default;
 
 /// Ligh green
 /// @type Color
-$light-green: #8fc400 !default;
+$light-green: hsl(76, 100%, 38%) !default;
 
 /// Light blue
 /// @type Color
-$light-blue: #207ce5 !default;
-
+$light-blue: hsl(212, 79%, 51%) !default;
 
 /// Container's maximum width
 /// @type Length
@@ -50,9 +41,26 @@ $max-width: 1380px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  'old-phone': 359px,
+  'extra-small': 576px,
+  'small': 768px,
+  'medium': 992px,
+  'large': 1200px,
+  'extra-large': 1440px,
+) !default;
+
+
+/// Font sizes map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$font-sizes: (
+    'size-1': 48px,
+    'size-2': 32px,
+    'size-3': 24px,
+    'size-4': 20px,
+    'size-5': 16px,
+    'size-6': 14px,
+    'small': 12px,
 ) !default;
 
 
@@ -60,4 +68,4 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: '/' !default;

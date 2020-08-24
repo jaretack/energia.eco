@@ -1,0 +1,76 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the partners component.
+// -----------------------------------------------------------------------------
+.partners {
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    border-top: 1px solid $light-grey;
+    background-color: #fff;
+
+    &__container {
+        max-width: 1380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: calc(100% / 3);
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__item-logo {
+        display: inline-block;
+    }
+}
+
+// RWD
+@include respond-until("medium") {
+    .partners {
+        &__item {
+            width: 50%;
+        }
+    }
+}
+
+@include respond-until("small") {
+    .partners {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:first-child .partners__item-logo {
+                height: 25px;
+            }
+        }
+
+        &__item-logo {
+            height: 40px;
+        }
+    }
+}
+
+@include respond-until("old-phone") {
+    .partners {
+        &__item {
+            &:first-child .partners__item-logo {
+                height: 25px;
+            }
+        }
+
+        &__item-logo {
+            height: 30px;
+        }
+    }
+}

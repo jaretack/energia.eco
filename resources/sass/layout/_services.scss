@@ -1,0 +1,130 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the services of the site/application.
+// -----------------------------------------------------------------------------
+
+.services {
+    margin-top: 120px;
+    padding-bottom: 120px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 120px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: initial;
+        text-align: center;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    &__item {
+        padding: 60px;
+        flex: 0 0 calc(50% - 15px);
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+        &:nth-child(1), &:nth-child(3) {
+            margin-right: 30px;
+        }
+
+        .icon {
+            margin-right: 15px;
+        }
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.99);
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
+
+    &__item-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    &__item-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__item-icon-container {
+        order: 1;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__item-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-right: 15px;
+        order: 2;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__item-title-link {
+        @include on-event(){
+            text-decoration: none;
+        }
+    }
+
+    &__item-text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        order: 3;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__item-buttons {
+        display: flex;
+        order: 4;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__interested-number {
+        font-weight: 700;
+        border-bottom: 2px solid $brand-color;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    &__bottom {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .button {
+        margin-right: 30px;
+    }
+}

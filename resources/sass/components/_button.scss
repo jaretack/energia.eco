@@ -1,3 +1,84 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.button {
+    background-color: #fff;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 50px;
+    border: none;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+    @include gradient(darken($brand-color, 5), $brand-color, diagonal);
+
+    @include on-event() {
+        text-decoration: none;
+        color: #fff;
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .1);
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    &--small {
+        display: inline-block;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 3px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 7px;
+    }
+
+    &--white {
+        background: #fff;
+        color: $brand-color;
+        border: 1px solid $brand-color;
+
+        @include on-event() {
+            color: $brand-color;
+
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+
+    &--white-2 {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+            background-color: #fff;
+            color: $brand-color;
+        }
+    }
+
+    &--blue {
+        @include gradient(darken($light-blue, 5), $light-blue, diagonal);
+    }
+}

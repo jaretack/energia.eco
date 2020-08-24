@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the input component.
+// -----------------------------------------------------------------------------
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.input {
+    position: relative;
+    padding-top: 15px;
+
+    &__field {
+        background-color: #fff;
+        height: 50px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 50px;
+        border: 1px solid $light-grey;
+        outline: none;
+        display: block;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:placeholder-shown ~ .input__label {
+            font-size: 15px;
+            font-weight: 400;
+            cursor: text;
+            top: 25px;
+        }
+
+        &:focus {
+            ~ .input__label {
+                position: absolute;
+                top: -20px;
+                display: block;
+                transition: 0.3s;
+                color: $brand-color;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__label {
+        position: absolute;
+        top: -20px;
+        display: block;
+        transition: 0.2s;
+        color: #666;
+        padding-left: 15px;
+    }
+}

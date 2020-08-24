@@ -1,0 +1,196 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the main navigation of the site/application.
+// -----------------------------------------------------------------------------
+.main-navigation {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 45px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-bottom: 1px solid $light-grey;
+
+    &--fixed {
+        top: 2px;
+    }
+
+    &--fixed-with {
+        top: 45px;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__logo-image {
+        display: block;
+    }
+
+    &__logo-text {
+        fill: #fff;
+        transition: all 0.3s ease;
+    }
+
+    &__nav {
+        width: 100%;
+        //max-width: $max-width;
+        height: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__container {
+        flex-grow: 1;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    &__item-link {
+        font-size: 15px;
+        font-weight: 500;
+        color: #000;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+
+        @include on-event() {
+            color: #000;
+            text-decoration: none;
+
+            &::after {
+                background-color: $brand-color;
+                width: 30px;
+                left: 0;
+            }
+        }
+
+        &::after {
+            display: block;
+            position: relative;
+            content: "";
+            width: 0px;
+            height: 3px;
+            background-color: transparent;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+            left: -15px;
+        }
+
+        &--active {
+            &::after {
+                width: 30px;
+                left: 0;
+                background-color: $brand-color;
+            }
+        }
+    }
+
+    &__toggle-button {
+        outline: none;
+        margin-top: 10px;
+        margin-left: 30px;
+        z-index: 3;
+        display: none;
+    }
+
+    .button {
+        margin-left: 15px;
+        z-index: 2;
+    }
+}
+
+// RWD
+@include respond-until("large") {
+    .main-navigation {
+        &__toggle-button {
+            display: block;
+        }
+    }
+}
+
+@include respond-until("large") {
+    .main-navigation {
+        &__nav {
+            height: 85px;
+            justify-content: space-between;
+        }
+
+        &__logo-container {
+            position: relative;
+            z-index: 3;
+        }
+
+        &__logo {
+            width: 184px;
+        }
+
+        &__logo-image {
+            height: 25px;
+        }
+
+        &__container {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            padding-top: 85px;
+            background-color: #fff;
+            top: 0;
+            left: 100%;
+            z-index: 2;
+            margin-top: 2px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            overflow: scroll;
+        }
+
+        &__list {
+            flex-direction: column;
+            margin-left: auto;
+        }
+
+        &__item {
+            margin-bottom: 15px;
+            margin-right: 60px;
+        }
+
+        &__item-link {
+            color: #000;
+            font-size: 16px;
+            margin-left: auto;
+        }
+
+        &--is-active {
+            .main-navigation__container {
+                left: 0;
+            }
+        }
+
+        .button {
+            margin-left: auto;
+        }
+    }
+}
+
+@include respond-until("extra-small") {
+    .main-navigation {
+        .button {
+            display: none;
+        }
+    }
+}

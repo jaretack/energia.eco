@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the cookies of the site/application.
+// -----------------------------------------------------------------------------
+.cookies {
+    border-top: 3px solid $brand-color;
+    background: #000;
+
+    &--close {
+        display: none;
+    }
+
+    &__container {
+        padding: 30px;
+        width: 100%;
+        position: relative;
+    }
+
+    &__text {
+        color: #fff;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: underline;
+
+        @include on-event {
+            color: #fff;
+        }
+    }
+
+    &__button {
+        background-color: #000;
+        border: none;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        top: -45px;
+        border-radius: 5px 5px 0 0;
+    }
+}

@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the eco energy benefits of the site/application.
+// -----------------------------------------------------------------------------
+.eco-energy-benefits {
+    padding-top: 180px;
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        @include fonts("size-3");
+    }
+
+    &__intro {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        margin-top: 120px;
+        @include gradient(darken($light-green, 10), $light-green, diagonal);
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: calc((100% - 60px) / 3);
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    &__box-title {
+        order: 2;
+        color: #fff;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include fonts("size-4");
+    }
+
+    &__box-icon {
+        order: 1;
+        margin-right: auto;
+    }
+
+    &__box-text {
+        order: 3;
+        color: #fff;
+    }
+}
+
+// RWD
+@include respond-until("large") {
+    .eco-energy-benefits {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__box {
+            width: 100%;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@include respond-until("medium") {
+    .eco-energy-benefits {
+        &__intro {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+@include respond-until("extra-large") {
+    .eco-energy-benefits {
+        &__title {
+            max-width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+

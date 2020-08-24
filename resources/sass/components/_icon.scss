@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the icon component.
+// -----------------------------------------------------------------------------
+.icon {
+    fill: $brand-color;
+    vertical-align: middle;
+
+    &--white {
+        fill: #fff;
+    }
+
+    &--green {
+        fill: $light-green;
+    }
+
+    &--blue {
+        fill: $light-blue;
+    }
+
+    &--height-16 {
+        height: 16px;
+    }
+
+    &--height-30 {
+        height: 30px;
+    }
+}

@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the process of the site/application.
+// -----------------------------------------------------------------------------
+.process {
+    @include gradient(darken($brand-color, 10), $brand-color, diagonal);
+    padding: 120px 0 30px;
+    counter-reset: item;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        counter-increment: item;
+        flex: 0 0 calc(100% / 3);
+
+        &::before {
+            content: counter(item);
+            display: block;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.05);
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__item-title {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 30px 0;
+    }
+
+    &__item-description {
+        font-size: 14px;
+        line-height: 28px;
+        color: #fff;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+}
+
+// RWD
+@include respond-until("extra-large") {
+    .process {
+        &__container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+@include respond-until("large") {
+    .process {
+        &__container {
+            padding-left: 30px;
+            padding-right: 30px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            flex: 1 0 50%;
+
+            &:first-child {
+                flex: 0 1 100%;
+            }
+        }
+    }
+}

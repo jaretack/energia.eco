@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="345" height="345" viewBox="0 0 345 345">
+  <defs>
+    <filter id="Ellipse_1" x="90" y="90" width="165" height="165" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#cc2020" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="energia-eko" data-name="Header image" transform="translate(-873 -326)">
+    <g id="solar" transform="translate(48)">
+      <g transform="matrix(1, 0, 0, 1, 825, 326)" filter="url(#Ellipse_1)">
+        <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="37.5" cy="37.5" r="37.5" transform="translate(135 135)" fill="#fff"/>
+      </g>
+      <g id="solar-panel" transform="translate(979.035 484.001)">
+        <path id="Path_9" data-name="Path 9" d="M34.256,1.566A1.9,1.9,0,0,0,32.373,0H5.061A1.9,1.9,0,0,0,3.177,1.566C-.227,21.63-.033,20.395-.033,20.624A1.9,1.9,0,0,0,1.877,22.5H35.555a1.893,1.893,0,0,0,1.91-1.863c0-.239.2.993-3.209-19.07ZM15.192,3.749h7.051l.572,5.625h-8.2Zm-4.4,15H4.133l1.113-6.562h6.211Zm.957-9.375H5.723l.954-5.625h5.636Zm1.923,9.375.668-6.562H23.1l.668,6.562Zm11.452-15h5.636l.954,5.625H25.69Zm1.527,15-.668-6.562H32.19L33.3,18.749Z" transform="translate(0 0)" fill="#cc2020" opacity="0.4"/>
+        <path id="Path_10" data-name="Path 10" d="M92.246,86.5l-2.812,0V84.625h-7.5v1.887l-2.812,0a.938.938,0,0,0-.937.938v1.86a.937.937,0,0,0,.938.938l13.125-.015a.937.937,0,0,0,.938-.937v-1.86A.937.937,0,0,0,92.246,86.5ZM89.209,64H82.158l-.572,5.625h8.2Zm9.468,5.625L97.723,64H92.086l.57,5.625Zm-8.609,2.812H81.3L80.631,79h10.1Zm-17.855,0L71.1,79h6.654l.669-6.562ZM79.281,64H73.645l-.954,5.625h6.021Zm19.874,8.437H92.944L93.612,79h6.657Z" transform="translate(-66.967 -60.251)" fill="#cc2020"/>
+      </g>
+    </g>
+    <g id="plug">
+      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(873 461)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="37.5" cy="37.5" r="37.5" stroke="none"/>
+        <circle cx="37.5" cy="37.5" r="36.5" fill="none"/>
+      </g>
+      <g id="plug-2" data-name="plug" transform="translate(899 484)">
+        <path id="Path_3" data-name="Path 3" d="M77.125,0A1.875,1.875,0,0,0,75.25,1.875v7.5H79v-7.5A1.875,1.875,0,0,0,77.125,0ZM65.875,0A1.875,1.875,0,0,0,64,1.875v7.5h3.75v-7.5A1.875,1.875,0,0,0,65.875,0Z" transform="translate(-60.25)" fill="#cc2020" opacity="0.4"/>
+        <path id="Path_4" data-name="Path 4" d="M22.5,160.938v1.875a.938.938,0,0,1-.937.938h-.937v1.875a9.379,9.379,0,0,1-7.5,9.187v5.813H9.375v-5.812a9.379,9.379,0,0,1-7.5-9.187V163.75H.938A.938.938,0,0,1,0,162.813v-1.875A.938.938,0,0,1,.938,160H21.563A.938.938,0,0,1,22.5,160.938Z" transform="translate(0 -150.625)" fill="#cc2020"/>
+      </g>
+    </g>
+    <g id="heat">
+      <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(1143 461)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="37.5" cy="37.5" r="37.5" stroke="none"/>
+        <circle cx="37.5" cy="37.5" r="36.5" fill="none"/>
+      </g>
+      <g id="thermometer-three-quarters" transform="translate(1156 484)">
+        <path id="Path_5" data-name="Path 5" d="M31,16.318V6.563a6.562,6.562,0,1,0-13.125,0v9.756a8.438,8.438,0,1,0,13.125,0ZM24.438,26.25a4.68,4.68,0,0,1-2.812-8.426V6.563a2.813,2.813,0,0,1,5.625,0V17.824a4.68,4.68,0,0,1-2.812,8.426Z" fill="#cc2020" opacity="0.4"/>
+        <path id="Path_6" data-name="Path 6" d="M117.618,142.063a2.813,2.813,0,1,1-3.75-2.643V128.938a.938.938,0,0,1,1.875,0V139.42A2.8,2.8,0,0,1,117.618,142.063Z" transform="translate(-90.368 -120.5)" fill="#cc2020"/>
+      </g>
+    </g>
+    <g id="scroll">
+      <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1008 326)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="37.5" cy="37.5" r="37.5" stroke="none"/>
+        <circle cx="37.5" cy="37.5" r="36.5" fill="none"/>
+      </g>
+      <g id="scroll-2" data-name="scroll" transform="translate(1027 349)">
+        <path id="Path_1" data-name="Path 1" d="M91.184,5.625V22.5H77.121a.937.937,0,0,0-.937.938v1.875a4.688,4.688,0,0,1-9.375,0V3.809A3.809,3.809,0,0,0,63,0H85.559A5.631,5.631,0,0,1,91.184,5.625Z" transform="translate(-59.309 0)" fill="#cc2020" opacity="0.4"/>
+        <path id="Path_2" data-name="Path 2" d="M3.75,0A3.75,3.75,0,0,0,0,3.75V6.562A.937.937,0,0,0,.937,7.5H7.5V3.808A3.809,3.809,0,0,0,3.75,0Zm7.5,30h.938c-.152,0-.3-.008-.449-.022C11.578,29.992,11.415,30,11.25,30Zm25.312-7.5H17.812a.938.938,0,0,0-.937.938v1.875A4.687,4.687,0,0,1,12.187,30h18.75A6.563,6.563,0,0,0,37.5,23.434.938.938,0,0,0,36.562,22.5Z" fill="#cc2020"/>
+      </g>
+    </g>
+    <g id="air">
+      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1008 596)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="37.5" cy="37.5" r="37.5" stroke="none"/>
+        <circle cx="37.5" cy="37.5" r="36.5" fill="none"/>
+      </g>
+      <g id="air-conditioner" transform="translate(1029 619)">
+        <path id="Path_7" data-name="Path 7" d="M72.906,145.344a2.344,2.344,0,0,1-2.344,2.344H70.2a2.416,2.416,0,0,1-2.419-1.969,2.277,2.277,0,0,1,1.28-2.43.962.962,0,0,0,.566-.857V141.4a.943.943,0,0,0-1.255-.889A5.13,5.13,0,0,0,64.979,146a5.3,5.3,0,0,0,5.319,4.5h.265a5.156,5.156,0,0,0,5.156-5.156V135.5H72.906Zm12.974-6.709a.943.943,0,0,0-1.255.889v1.032a.962.962,0,0,0,.566.857,2.277,2.277,0,0,1,1.28,2.43,2.417,2.417,0,0,1-2.418,1.969h-.365a2.344,2.344,0,0,1-2.344-2.344V135.5H78.531v7.969a5.156,5.156,0,0,0,5.156,5.156h.265a5.3,5.3,0,0,0,5.319-4.5A5.13,5.13,0,0,0,85.88,138.635ZM64,128v1.875H90.25V128Z" transform="translate(-60.25 -120.5)" fill="#cc2020" opacity="0.4"/>
+        <path id="Path_8" data-name="Path 8" d="M31.875,0h-30A1.875,1.875,0,0,0,0,1.875V11.25a1.875,1.875,0,0,0,1.875,1.875h30A1.875,1.875,0,0,0,33.75,11.25V1.875A1.875,1.875,0,0,0,31.875,0ZM30,9.375H3.75V7.5H30Z" fill="#cc2020"/>
+      </g>
+    </g>
+    <g id="lines">
+      <line id="Line_1" data-name="Line 1" x2="40" transform="translate(957.5 498.5)" fill="none" stroke="#cc2020" stroke-width="2"/>
+      <line id="Line_2" data-name="Line 2" x2="40" transform="translate(1093.5 498.5)" fill="none" stroke="#cc2020" stroke-width="2"/>
+      <line id="Line_3" data-name="Line 3" y1="40" transform="translate(1045.5 546.5)" fill="none" stroke="#cc2020" stroke-width="2"/>
+      <line id="Line_4" data-name="Line 4" y1="40" transform="translate(1045.5 410.5)" fill="none" stroke="#cc2020" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

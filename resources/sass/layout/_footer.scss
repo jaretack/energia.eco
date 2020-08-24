@@ -1,3 +1,103 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+    border-top: 1px solid $light-grey;
+
+    &__container {
+        height: 159px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact {
+    }
+
+    &__contact-name {
+        width: 70px;
+        display: inline-block;
+    }
+
+    &__contact-value {
+        font-weight: 600;
+    }
+
+    &__partners {
+        margin-left: auto;
+    }
+
+    &__partners-logo {
+        height: 40px;
+        margin-left: 30px;
+    }
+
+    &__copyrights {
+        margin-left: 60px;
+        padding-left: 60px;
+        border-left: 1px solid $light-grey;
+    }
+}
+
+// RWD
+@include respond-until("extra-large") {
+    .footer {
+        &__container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+@include respond-until("medium") {
+    .footer {
+        &__container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: initial;
+        }
+
+        &__contact {
+            flex: 1 0 50%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &__copyrights {
+            flex: 1 0 50%;
+            margin-left: 0;
+            text-align: right;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &__partners {
+            flex: 0 1 100%;
+            text-align: center;
+            border-top: 1px solid $light-grey;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@include respond-until("extra-small") {
+    .footer {
+        &__contact {
+            flex-basis: 100%;
+            order: 1;
+            text-align: center;
+        }
+
+        &__partners {
+            order: 2;
+            border-bottom: 1px solid $light-grey;
+        }
+
+        &__copyrights {
+            order: 3;
+            border-left: none;
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+}
