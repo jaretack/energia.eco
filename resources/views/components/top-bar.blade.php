@@ -3,7 +3,7 @@
         <span class="button button--small button--blue">5000 zł</span>
         <span class="top-bar__text" aria-hidden="false">Trwa nabór wniosków o dofinansowanie do fotowoltaiki. Załatwiamy za Ciebie wszystkie formalności. Zainteresowany?</span>
         <span class="top-bar__text-mobile" aria-hidden="true">dofinansowania do fotowoltaiki - Zainteresowany?</span>
-        <a class="top-bar__link" href="#contact">Kliknij tutaj</a>
+        <a class="top-bar__link scroll-to" href="#contact">Kliknij tutaj</a>
     </p>
     <adress class="top-bar__adress">
         <ul class="top-bar__contact">
