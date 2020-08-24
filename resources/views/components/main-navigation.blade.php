@@ -8,16 +8,16 @@
         <nav class="main-navigation__container" aria-expanded="true" aria-label="Main menu">
             <ul class="main-navigation__list">
                 <li class="main-navigation__item">
-                    <a class="main-navigation__item-link @if ($active_page == "fotowoltaika")main-navigation__item-link--active @endif" href="{{ url('fotowoltaika') }}">Fotowoltaika</a>
+                    <a class="main-navigation__item-link @if ($active_page == "fotowoltaika")main-navigation__item-link--active @endif" href="#">Fotowoltaika</a>
                 </li>
                 <li class="main-navigation__item">
-                    <a class="main-navigation__item-link @if ($active_page == "farmy-fotowoltaiczne")main-navigation__item-link--active @endif" href="{{ url('farmy-fotowoltaiczne') }}">Farmy fotowoltaiczne</a>
+                    <a class="main-navigation__item-link @if ($active_page == "farmy-fotowoltaiczne")main-navigation__item-link--active @endif" href="#">Farmy fotowoltaiczne</a>
                 </li>
                 <li class="main-navigation__item">
-                    <a class="main-navigation__item-link @if ($active_page == "folie-grzewcze")main-navigation__item-link--active @endif" href="{{ url('folie-grzewcze') }}">Folie grzewcze</a>
+                    <a class="main-navigation__item-link @if ($active_page == "folie-grzewcze")main-navigation__item-link--active @endif" href="#">Folie grzewcze</a>
                 </li>
                 <li class="main-navigation__item">
-                    <a class="main-navigation__item-link @if ($active_page == "pompy-ciepla")main-navigation__item-link--active @endif" href="{{ url('pompy-ciepla') }}">Pompy ciepła</a>
+                    <a class="main-navigation__item-link @if ($active_page == "pompy-ciepla")main-navigation__item-link--active @endif" href="#">Pompy ciepła</a>
                 </li>
                 <li class="main-navigation__item">
                     <a class="main-navigation__item-link scroll-to" href="{{ url('#contact') }}" role="button">Kontakt</a>
