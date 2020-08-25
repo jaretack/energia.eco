@@ -214,7 +214,7 @@
         </div>
         <div class="our-services__contact">
             <a class="button button--white scroll-to" href="#contact">Zamów bezpłatną wycenę</a>
-            <span class="our-services__contact-text">lub zadzwoń</span> <span class="our-services__contact-number">788 150 744</span>
+            <span class="our-services__contact-text">lub zadzwoń</span> <a class="our-services__contact-number" href="tel:+48788150744">788 150 744</a>
         </div>
     </section>
     <div class="partners">

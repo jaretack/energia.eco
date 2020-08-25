@@ -77,6 +77,17 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
+
+        &__partners-logo {
+            &:first-child {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            &:nth-child(2) {
+                margin-left: 15px;
+            }
+        }
     }
 }
 

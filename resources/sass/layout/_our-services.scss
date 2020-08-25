@@ -97,6 +97,11 @@
         border-bottom: 2px solid $brand-color;
         margin-left: 15px;
         font-size: 15px;
+
+        @include on-event() {
+            color: #000;
+            text-decoration: none;
+        }
     }
 }
 
@@ -148,6 +153,35 @@
         &__contact-text {
             margin-top: 15px;
             margin-bottom: 15px;
+        }
+
+        &__box-buttons {
+            flex-direction: column;
+
+            .button {
+                margin-right: auto;
+
+                &:first-child {
+                    margin-right: auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-until("old-phone") {
+    .our-services {
+        &__box-buttons {
+            .button {
+                &:first-child {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
         }
     }
 }
