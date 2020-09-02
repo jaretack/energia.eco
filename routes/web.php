@@ -17,4 +17,5 @@ Route::get('/', 'StaticPage@home');
 Route::get('/fotowoltaika', 'StaticPage@fotowoltaika');
 Route::get('/fotowoltaika/kielce', 'StaticPage@fotowoltaikaKielce');
 Route::get('/folie-grzewcze', 'StaticPage@folieGrzewcze');
+Route::get('/wspolpraca/ThGdb', 'StaticPage@presentation');
 

@@ -164,7 +164,7 @@
         line-height: 32px;
         margin: 0;
         position: relative;
-        min-height: 128px;
+        min-height: 160px;
     }
 
     &__item-author {
@@ -256,6 +256,10 @@
             &--hidden {
                 display: none;
             }
+        }
+
+        &__item-description {
+            min-height: initial;
         }
 
         &__top-recommendation-content {

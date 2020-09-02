@@ -227,7 +227,7 @@
                     <img class="partners__item-logo" src="{{ url('/images/partners/kpt.webp') }}" alt="Kielecki Park Technologiczny">
                 </li>
                 <li class="partners__item">
-                    <img class="partners__item-logo" src="{{ url('/images//partners/pcde.webp') }}" alt="Polskie Centrum Doradztwa Energetycznego">
+                    <img class="partners__item-logo" src="{{ url('/images//partners/calimero.webp') }}" alt="Calimero">
                 </li>
                 <li class="partners__item">
                     <img class="partners__item-logo" src="{{ url('/images/partners/rogy.webp') }}" alt="Rogy">
@@ -256,18 +256,18 @@
                             <span class="ratings__star"></span>
                         </div>
                         <p class="recommendations__item-description">
-                            Profesjonalne podejście do klienta oraz bezproblemowa współpraca. Mogę szczerze polecić tą firmę.
+                            Doradztwo na najwyższym poziomie – do tego znakomita jakość oferowanych produktów. W szczególności polecam kontakt telefoniczny z uwagi na klarowne tłumaczenie wszelkich technicznych wątpliwości.
                         </p>
                         <div class="recommendations__item-author-info">
                             <span class="recommendations__item-description-quote-container">
                                 <svg class="recommendations__item-description-quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M176 32H64C28.7 32 0 60.7 0 96v128c0 35.3 28.7 64 64 64h64v24c0 30.9-25.1 56-56 56H56c-22.1 0-40 17.9-40 40v32c0 22.1 17.9 40 40 40h16c92.6 0 168-75.4 168-168V96c0-35.3-28.7-64-64-64zm32 280c0 75.1-60.9 136-136 136H56c-4.4 0-8-3.6-8-8v-32c0-4.4 3.6-8 8-8h16c48.6 0 88-39.4 88-88v-56H64c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h112c17.7 0 32 14.3 32 32v216zM448 32H336c-35.3 0-64 28.7-64 64v128c0 35.3 28.7 64 64 64h64v24c0 30.9-25.1 56-56 56h-16c-22.1 0-40 17.9-40 40v32c0 22.1 17.9 40 40 40h16c92.6 0 168-75.4 168-168V96c0-35.3-28.7-64-64-64zm32 280c0 75.1-60.9 136-136 136h-16c-4.4 0-8-3.6-8-8v-32c0-4.4 3.6-8 8-8h16c48.6 0 88-39.4 88-88v-56h-96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h112c17.7 0 32 14.3 32 32v216z"/></svg>
                             </span>
-                            <span class="recommendations__item-author-profession">Polskie Centrum Doradztwa Energetycznego</span>
-                            <span class="recommendations__item-author">mgr inż. Armand Naporowski</span>
+                            <span class="recommendations__item-author-profession">dr filologii polskiej</span>
+                            <span class="recommendations__item-author">Mateusz Pustuła</span>
                         </div>
                     </div>
                     <div class="recommendations__item-image-container">
-                        <img src="{{ url('/images/rekomendacje/armand-naporowski.webp') }}" class="recommendations__item-image" alt="Armand Naporowski">
+                        <img src="{{ url('/images/rekomendacje/mateusz-pustula.webp') }}" class="recommendations__item-image" alt="Mateusz Pustuła">
                     </div>
                 </div>
                 <div class="recommendations__item">

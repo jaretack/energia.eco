@@ -25,4 +25,9 @@ class StaticPage extends Controller
     {
         return view('folie-grzewcze', ['active_page' => 'folie-grzewcze']);
     }
+
+    public function presentation()
+    {
+        return view('presentation', ['active_page' => 'presentation']);
+    }
 }

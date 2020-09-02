@@ -1,0 +1,454 @@
+.presentation-page {
+    .main-navigation {
+        top: 0;
+
+        &__container {
+            display: none;
+        }
+
+        &__toggle-button {
+            display: none;
+        }
+
+        .button {
+            display: none;
+        }
+
+        &__nav {
+            justify-content: center;
+        }
+    }
+}
+
+.presentation {
+    margin-top: 111px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+
+    &__logo {
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 48px;
+        line-height: initial;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        position: relative;
+        left: -45px;
+
+        &:after {
+            @include pseudo(block, relative);
+            width: 60px;
+            height: 6px;
+            background-color: #cb2020;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__intro {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__about {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+
+    &__about-title {
+        font-size: 24px;
+        font-weight: 900;
+        position: relative;
+        left: -45px;
+
+        &:after {
+            @include pseudo(block, relative);
+            width: 60px;
+            height: 6px;
+            background-color: $brand-color;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    }
+
+    &__about-item {
+        margin-top: 60px;
+    }
+
+    &__about-item-info {
+    }
+
+    &__about-item-img-container {
+        border: 15px solid whitesmoke;
+        padding: 15px;
+        border-radius: 50%;
+        width: 260px;
+    }
+
+    &__about-item-img {
+        border-radius: 50%;
+        width: 200px;
+        display: block;
+    }
+
+    &__about-item-name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: initial;
+        margin-top: 30px;
+    }
+
+    &__about-item-position {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: initial;
+        color: #cb2020;
+        margin-top: 5px;
+        margin-left: 15px;
+        display: block;
+    }
+
+    &__about-item-text {
+        margin-top: 60px;
+    }
+
+    // client
+    &__client {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+
+    &__client-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 60px;
+        position: relative;
+        left: -45px;
+
+        &:after {
+            @include pseudo(block, relative);
+            width: 60px;
+            height: 6px;
+            background-color: $brand-color;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    }
+
+    &__client-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    &__client-item {
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+        width: calc((100% - 30px) / 2);
+        border: 1px solid whitesmoke;
+        border-radius: 3px;
+
+        &:first-child {
+            margin-right: 30px;
+        }
+
+        &:nth-child(3) {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .icon {
+            margin-right: auto;
+        }
+    }
+
+    &__client-item-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 320px;
+        font-size: 20px;
+        line-height: initial;
+    }
+
+    // plan
+    &__plan {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+
+    &__plan-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 60px;
+        position: relative;
+        left: -45px;
+
+        &:after {
+            @include pseudo(block, relative);
+            width: 60px;
+            height: 6px;
+            background-color: $brand-color;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    }
+
+    &__plan-intro {
+        margin-bottom: 60px;
+    }
+
+    &__plan-item {
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    &__plan-item-title {
+        margin-bottom: 30px;
+    }
+
+    &__plan-item-text {
+        width: 600px;
+    }
+
+    &__plan-number {
+        width: 30px;
+        height: 30px;
+        background-color: #f6f6f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: -45px;
+        color: $brand-color;
+        font-weight: 700;
+    }
+
+    // benefits
+    &__benefits {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+
+    &__benefits-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 60px;
+        position: relative;
+        left: -30px;
+
+        &:after {
+            @include pseudo(block, relative);
+            width: 60px;
+            height: 6px;
+            background-color: $brand-color;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    }
+
+    &__benefits-intro {
+        margin-bottom: 60px;
+    }
+
+    &__benefits-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__benefits-item {
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+        width: calc((100% - 30px) / 2);
+        border: 1px solid whitesmoke;
+        border-radius: 3px;
+
+        &:first-child {
+            margin-right: 30px;
+        }
+
+        &:nth-child(3) {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .icon {
+            margin-right: auto;
+        }
+    }
+
+    &__benefits-item-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 320px;
+        font-size: 20px;
+        line-height: initial;
+    }
+
+
+    // want
+    &__want {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+
+    &__want-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 60px;
+        position: relative;
+        left: -30px;
+
+        &:after {
+            @include pseudo(block, relative);
+            width: 60px;
+            height: 6px;
+            background-color: $brand-color;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    }
+
+    &__want-intro {
+        margin-bottom: 60px;
+    }
+
+    &__want-container {
+        margin-top: 60px;
+        padding: 30px 60px;
+        border: 1px solid #f6f6f6;
+        border-radius: 3px;
+    }
+
+    &__want-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__want-item {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        width: 50%;
+        display: flex;
+
+        &::before {
+            @include pseudo(block, relative);
+            flex: 0 0 5px;
+            height: 5px;
+            background-color: $brand-color;
+            border-radius: 50%;
+            top: 8px;
+            margin-right: 10px;
+        }
+    }
+
+    &__want-text {
+        margin-top: 60px;
+
+        span {
+            color: $brand-color;
+        }
+    }
+
+    // we-have
+    &__we-have {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+
+    &__we-have-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 60px;
+        position: relative;
+        left: -30px;
+
+        &:after {
+            @include pseudo(block, relative);
+            width: 60px;
+            height: 6px;
+            background-color: $brand-color;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    }
+
+    &__we-have-intro {
+        margin-bottom: 60px;
+    }
+
+    &__we-have-container {
+        margin-top: 60px;
+        padding: 30px 60px;
+        border: 1px solid #f6f6f6;
+        border-radius: 3px;
+    }
+
+    &__we-have-item {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &::before {
+            @include pseudo(block, relative);
+            flex: 0 0 5px;
+            height: 5px;
+            background-color: $brand-color;
+            border-radius: 50%;
+            top: 8px;
+            margin-right: 10px;
+        }
+
+        a {
+            color: $brand-color;
+            font-weight: 600;
+        }
+    }
+
+    &__we-have-item-top {
+        flex-grow: 1;
+    }
+
+    &__we-have-item-bottom {
+        margin-left: 15px;
+    }
+
+    // signature
+    &__signature {
+        text-align: right;
+        margin-bottom: 120px;
+    }
+}

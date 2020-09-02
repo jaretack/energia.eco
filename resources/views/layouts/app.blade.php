@@ -111,7 +111,6 @@
             Polityka Prywatności
         </div>
         <div class="footer__partners">
-            <img class="footer__partners-logo" src="{{ url('/images/partners/pcde.webp') }}" alt="Polskie Centrum Doradztwa Energetycznego">
             <img class="footer__partners-logo" src="{{ url('/images/partners/kpt.webp') }}" alt="Kielecki Park Technologiczny">
         </div>
     </div>
